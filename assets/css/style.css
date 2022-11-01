@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.pic {
+    display: none;
+    position: absolute;
+    width: 600px;
+    top: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pic.show {
+    display: block;
+}
+
+.btn-arrow {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.btn-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-arrow::before {
+    color: #fff;
+    font-size: 16px;
+}
+
+.btn-left {
+    top: 304px;
+    left: 15px;
+}
+
+.btn-right {
+    top: 304px;
+    right: 15px;
+}
+
+.btn-row {
+    margin-top: 20px;
+    position: relative;
+    top: 550px;
+}
+
+.btn-row button {
+    margin: 0 4px;
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 50%;
+    background-color: #666;
+}
+
+.btn-row button.btn-active {
+    background-color: #000;
+}
+
+.btn-row > button:hover {
+    cursor: pointer;
+    background-color: #000;
+}
+
+.btn-show button {
+    position: relative;
+    top: 400px;
+    left: 400px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #666;
+    color: #fff;
+}
+
+.btn-show button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
